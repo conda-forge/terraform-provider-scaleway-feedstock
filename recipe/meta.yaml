@@ -5,8 +5,8 @@
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
 {% set sha256 = "0a5d250e923a1c28c53e0fa3a0d6acc5709408da58ddf1890a392d12004f657d" %}
-{% set sha256_win32 = "9dbe3ac5555562687dce1f400533bcfd3be0c57c021755c9bb0b72b9f1c39d44" %}
-{% set sha256_win64 = "02ccf081a17f4b4b0ec7861d1d054ed0a6375082776b3a0bfc31f6a7a6eb1a3c" %}
+{% set sha256_win32 = "c8d12e63efc7fefaee21a03fa068cd5b8abff3da79f289a7f2d51f06c2a8384f" %}
+{% set sha256_win64 = "14f6ec26e8c20fdc80ceb4074bab10db1341a8c0103b936dd9869d4fe8830e44" %}
 
 package:
   name: {{ name|lower }}
