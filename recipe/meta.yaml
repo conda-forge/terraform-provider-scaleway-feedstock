@@ -1,11 +1,10 @@
-{% set provider= "Scaleway" %}
+{% set provider = "Scaleway" %}
 {% set version = "1.4.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
 {% set sha256 = "6550a4b8a8a455ae8b6ab2e8bb52c2d2246083e7fc7b48366e7aa877f7e4efb3" %}
-{% set sha256_win32 = "c8d12e63efc7fefaee21a03fa068cd5b8abff3da79f289a7f2d51f06c2a8384f" %}
 {% set sha256_win64 = "14f6ec26e8c20fdc80ceb4074bab10db1341a8c0103b936dd9869d4fe8830e44" %}
 
 package:
@@ -17,10 +16,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz  # [not win]
   sha256: {{ sha256 }}  # [not win]
 
-  url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_386.zip  # [win32]
   url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
   fn: {{ name }}-{{ version }}.zip  # [win]
-  sha256: {{ sha256_win32 }}  # [win32]
   sha256: {{ sha256_win64 }}  # [win64]
 
 build:
@@ -46,7 +43,7 @@ about:
   license: MPL 2.0
   summary: The Terraform {{ provider }} provider
   doc_url: https://www.terraform.io/docs/providers/{{ provider|lower }}/index.html
-  dev_url: https://https://github.com/terraform-providers/{{ name }}
+  dev_url: https://github.com/terraform-providers/{{ name }}
 
 extra:
   recipe-maintainers:
