@@ -1,10 +1,10 @@
 {% set provider = "Scaleway" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "6550a4b8a8a455ae8b6ab2e8bb52c2d2246083e7fc7b48366e7aa877f7e4efb3" %}
+{% set sha256 = "f851a119f83914abf13cc5f8535f63945b585829d1bbfb9a07d498d4a4d43e01" %}
 {% set sha256_win64 = "96215693a422594329da038200ec3863dea949783ba5b5f2c8f7deaaa7d765d1" %}
 
 package:
