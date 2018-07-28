@@ -1,5 +1,5 @@
 {% set provider = "Scaleway" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,10 +11,10 @@ package:
 source:
   - folder: src/github.com/terraform-providers/{{ name|lower }}
     url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
-    sha256: 9e666ef238a14ac62daa76e218159b1a9f78cb3aba870e1605400172f9ee44ee  # [not win]
+    sha256: 392f5c2e2fa664dcd3c1bb21706039c28f764f09e15e482a44209844abe9ca43  # [not win]
 
     url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
-    sha256: 3a88e3dd30b8ca9f84a4b3e44d2d239cb97547be66bf76478eeba7f3198bb8d3  # [win64]
+    sha256: eabe5a6c91c368c613b367e91412346fc2d12875117228964d52f096f8b8cc03  # [win64]
 
 build:
   number: 1
