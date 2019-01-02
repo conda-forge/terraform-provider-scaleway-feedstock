@@ -1,6 +1,6 @@
 {% set provider = "Scaleway" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.8.0" %}
+{% set version = "1.6.0" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
@@ -14,11 +14,10 @@ package:
 source:
   - folder:  {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: a3af9e7b7a57c2729fc2bb3440c6ded7091821d688cdd9e12e9533d61728d001
-
+    sha256: a508b4cc7aaf4bcd8f93b8ba6e2e28c46a40f8478fe9f0e4213ffc2bab0039bc
 
 build:
-  number: 1001
+  number: 1000
   script:
     - pushd {{ pkg_src }}
     - go build -v -o $GOBIN/{{ x4_plugin }} .  # [unix]
