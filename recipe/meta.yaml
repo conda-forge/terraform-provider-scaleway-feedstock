@@ -14,7 +14,7 @@ package:
 source:
   - folder:  {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: d679b57fd836aa7c5f2e92d013ad563ef0926d91e517da6864702e3567ff0ad9 
+    sha256: 026e671d99818d0c4ba7fc6226c099252567dedef3db8ea556d5c962471a8f19 
 
 build:
   number: 0
