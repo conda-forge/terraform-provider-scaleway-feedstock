@@ -1,6 +1,6 @@
 {% set provider = "Scaleway" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.14.0" %}
+{% set version = "1.15.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: afb185b9057c3853929c652f5446755cb767c70713c8f085f249780ea8b2cc94
+  sha256: d10eb11348b3c340deaf0912896139d7a2d238c16fb615ec0a9f3946def45db9
 
 build:
   number: 0
